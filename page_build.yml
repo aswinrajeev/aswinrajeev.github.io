@@ -1,6 +1,8 @@
 name: React Build
 
 on:
+    push:
+        branches: ['mainline']
     pull_request:
         branches: ['mainline']
 
