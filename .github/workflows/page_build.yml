@@ -36,6 +36,7 @@ jobs:
 
             - name: Build
               run: |
+                  cd aswin-home
                   npm install
                   npm run build
 
@@ -45,7 +46,7 @@ jobs:
               uses: actions/upload-pages-artifact@v1
               with:
                   # Upload build directory content
-                  path: 'build/'
+                  path: 'aswin-home/out/'
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v1
