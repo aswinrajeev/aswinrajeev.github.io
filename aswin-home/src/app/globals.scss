@@ -1,0 +1,77 @@
+//
+// Import Bootstrap
+//
+
+@import "bootstrap/scss/bootstrap";
+
+
+//
+// Import Bootstrap Icons w/ custom path to fonts folder
+//
+
+// $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+.display-pic img {
+    border-radius: 100%;
+    width: 18em;
+}
+
+a {
+    text-decoration: none;
+    color:#252525
+}
+
+.about {
+    display: grid;
+    height: auto;
+    width: 50em;
+    gap: 10px;
+    margin: auto;
+    grid-template-areas:
+        'dp hello hello hello hello'
+        'dp tagline tagline tagline tagline'
+        'dp intro intro intro intro'
+        'dp intro intro intro intro'
+        'dp social social social social';
+}
+
+.about .display-pic {
+    grid-area: dp;
+}
+
+.about .hello {
+    font-size: 3em;
+    font-weight: 800;
+    grid-area: hello;
+}
+
+.about .tagline {
+    grid-area: tagline;
+    font-size: 1.5em;
+}
+
+.about .intro {
+    font-size: medium;
+    grid-area: intro;
+}
+
+.about .social {
+    grid-area: social;
+    display: inline;
+    vertical-align: middle;
+}
+
+.about .social li {
+    background-color: #e2e4e5;
+    vertical-align: middle;
+    border-radius: 0.3em;
+    padding: 0.6em;
+    padding-top: 0.8em;
+    margin-right: 0.4em;
+    display: inline;
+}
+
+.about .social li i {
+    font-size: x-large;
+    padding-top: 0.6em;
+}
