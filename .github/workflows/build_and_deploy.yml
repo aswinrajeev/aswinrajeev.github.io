@@ -1,10 +1,10 @@
-name: React Build
+name: Build & Deploy
 
 on:
     push:
         branches: ['mainline']
     pull_request:
-        types: [opened, reopened]
+        types: [closed]
 
 env:
     CI: false
