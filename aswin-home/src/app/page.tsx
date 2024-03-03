@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import FeedComponent from "./feed";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <a href="https://www.github.com/aswinrajeev"><li><i className="bi bi-github"></i><span className="social-text"> Projects</span></li></a>
         </div>
       </div>
+      <FeedComponent/>
       <footer className="footer">
         <span>Copyright © Aswin Rajeev, 2021- 2024</span>
       </footer>
