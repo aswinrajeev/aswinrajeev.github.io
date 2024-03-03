@@ -7,11 +7,11 @@ export default function Home() {
         <img className="logo" src="/aswinrajeev.webp" alt="Aswin Rajeev logo"/>
         <nav className="navbar">
           <ul>
-            <li className="nav-link">One</li>
-            <li className="nav-link">Two</li>
-            <li className="nav-link">Three</li>
-            <li className="nav-link">Four</li>
-            <li className="nav-link">Five</li>
+            <a href="/"><li className="nav-link">Home</li></a>
+            <a href="https://blog.aswin.me"><li className="nav-link">Blog</li></a>
+            <a href="#"><li className="nav-link">Works</li></a>
+            <a href="#"><li className="nav-link">About</li></a>
+            <a href="#"><li className="nav-link">Contact</li></a>
           </ul>
         </nav>
       </header>
