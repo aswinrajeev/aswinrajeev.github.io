@@ -102,6 +102,7 @@ a {
 .about .intro {
     font-size: medium;
     grid-area: intro;
+    margin-bottom: 1.2em;
 }
 
 .about .social {
@@ -124,9 +125,23 @@ a {
     display: inline;
 }
 
+.about .social li:hover, .about .social li:focus {
+    background-color: #252525;
+    color: #e2e4e5;
+}
+
 .about .social i {
     font-size: x-large;
     padding-top: 0.6em;
+}
+
+.footer {
+    height: 5em;
+    background-color: #252525;
+    color: #fefefe;
+    padding: 1.3em;
+    text-align: center;
+    margin-top: 7em;
 }
 
 /** For large screens **/
