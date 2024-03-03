@@ -12,9 +12,40 @@
 // $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
 @import "bootstrap-icons/font/bootstrap-icons";
 
+body {
+    min-width: 450px;
+}
+
 a {
     text-decoration: none;
     color:#252525
+}
+
+.header {
+    max-width: 1000px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 4em;
+}
+
+.logo {
+    width: 10em;
+    float: left;
+    padding: 7px;
+    position: relative;
+    top: 0.2em;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar .nav-link {
+    float: left;
+    padding: 7px;
+    height: 3em;
 }
 
 .display-pic img {
@@ -23,12 +54,13 @@ a {
 
 .about {
     display: grid;
+    clear: both;
     height: auto;
     width: 90%;
     max-width: 800px;
-    min-width: 350px;
-    gap: 10px;
+    gap: 0.6em;
     margin: auto;
+    margin-top: 70px;
     text-align: center;
     grid-template-areas:
         'dp'
@@ -109,7 +141,7 @@ a {
     }
 
     .display-pic img {
-        width: 90%;
+        width: 90% !important;
     }
 
 }
