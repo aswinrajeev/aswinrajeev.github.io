@@ -13,7 +13,7 @@
 @import "bootstrap-icons/font/bootstrap-icons";
 
 body {
-    min-width: 450px;
+    min-width: 310px;
 }
 
 a {
@@ -52,6 +52,7 @@ a {
 
 .navbar ul {
     margin: auto;
+    padding: 0;
 }
 
 .display-pic img {
