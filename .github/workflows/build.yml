@@ -10,29 +10,22 @@ env:
 jobs:
     build:
         runs-on: ubuntu-latest
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-        permissions:
-            contents: 'read'
-            id-token: 'write'
-            pages: 'write'
-            actions: 'write'
-            checks: 'write'
-        strategy:
-            matrix:
-                node-version: [21.x]
 
         steps:
-            - uses: actions/checkout@v3
+            - name: Checkout
+              uses: actions/checkout@v3
 
-            - name: Use Node.js ${{ matrix.node-version }}
+            - name: Use Node.js
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Build
+            - name: Install Dependencies
               run: |
                   cd aswin-home
                   npm install
+
+            - name: Build
+              run: |
+                  cd aswin-home
                   npm run build

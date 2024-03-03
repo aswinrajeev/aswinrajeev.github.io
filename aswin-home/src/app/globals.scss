@@ -11,14 +11,14 @@
 
 // $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
 @import "bootstrap-icons/font/bootstrap-icons";
-.display-pic img {
-    border-radius: 100%;
-    width: 70%;
-}
 
 a {
     text-decoration: none;
     color:#252525
+}
+
+.display-pic img {
+    border-radius: 100%;
 }
 
 .about {
@@ -26,6 +26,7 @@ a {
     height: auto;
     width: 90%;
     max-width: 800px;
+    min-width: 350px;
     gap: 10px;
     margin: auto;
     text-align: center;
@@ -37,32 +38,15 @@ a {
         'social';
 }
 
-@media only screen and (min-width: 600px) {
-
-    .about {
-        grid-template-areas:
-            'dp hello hello hello hello'
-            'dp tagline tagline tagline tagline'
-            'dp intro intro intro intro'
-            'dp intro intro intro intro'
-            'dp social social social social';
-        text-align: left;
-    }
-
-    .about .display-pic {
-        min-width: 15em;
-    }
-
-    .about .social-text {
-        display: inline;
-    }
-    
-}
-
 .about .display-pic {
     grid-area: dp;
     margin: auto;
     text-align: center;
+}
+
+.about .display-pic img {
+    width: 70%;
+    max-width: 30em;
 }
 
 .about .hello {
@@ -104,4 +88,35 @@ a {
 .about .social i {
     font-size: x-large;
     padding-top: 0.6em;
+}
+
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+
+    .about {
+        grid-template-areas:
+            'dp hello hello hello hello'
+            'dp tagline tagline tagline tagline'
+            'dp intro intro intro intro'
+            'dp intro intro intro intro'
+            'dp social social social social';
+        text-align: left;
+        min-width: 700px;
+    }
+
+    .about .display-pic {
+        min-width: 10em;
+    }
+
+    .display-pic img {
+        width: 90%;
+    }
+
+}
+
+/** For larger screens **/
+@media only screen and (min-width: 900px) {
+    .about .social-text {
+        display: unset;
+    }
 }
