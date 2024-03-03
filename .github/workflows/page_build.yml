@@ -4,7 +4,7 @@ on:
     push:
         branches: ['mainline']
     pull_request:
-        branches: ['mainline']
+        types: [opened, reopened]
 
 env:
     CI: false
