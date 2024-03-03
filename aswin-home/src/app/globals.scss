@@ -13,7 +13,7 @@
 @import "bootstrap-icons/font/bootstrap-icons";
 .display-pic img {
     border-radius: 100%;
-    width: 18em;
+    width: 70%;
 }
 
 a {
@@ -24,19 +24,45 @@ a {
 .about {
     display: grid;
     height: auto;
-    width: 50em;
+    width: 90%;
+    max-width: 800px;
     gap: 10px;
     margin: auto;
+    text-align: center;
     grid-template-areas:
-        'dp hello hello hello hello'
-        'dp tagline tagline tagline tagline'
-        'dp intro intro intro intro'
-        'dp intro intro intro intro'
-        'dp social social social social';
+        'dp'
+        'hello'
+        'tagline'
+        'intro'
+        'social';
+}
+
+@media only screen and (min-width: 600px) {
+
+    .about {
+        grid-template-areas:
+            'dp hello hello hello hello'
+            'dp tagline tagline tagline tagline'
+            'dp intro intro intro intro'
+            'dp intro intro intro intro'
+            'dp social social social social';
+        text-align: left;
+    }
+
+    .about .display-pic {
+        min-width: 15em;
+    }
+
+    .about .social-text {
+        display: inline;
+    }
+    
 }
 
 .about .display-pic {
     grid-area: dp;
+    margin: auto;
+    text-align: center;
 }
 
 .about .hello {
@@ -61,6 +87,10 @@ a {
     vertical-align: middle;
 }
 
+.about .social-text {
+    display: none;
+}
+
 .about .social li {
     background-color: #e2e4e5;
     vertical-align: middle;
@@ -71,7 +101,7 @@ a {
     display: inline;
 }
 
-.about .social li i {
+.about .social i {
     font-size: x-large;
     padding-top: 0.6em;
 }
