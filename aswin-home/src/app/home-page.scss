@@ -1,0 +1,109 @@
+/**  Home-page sections **/
+/** ========= **/
+
+.about {
+    display: grid;
+    clear: both;
+    height: auto;
+    width: 90%;
+    max-width: 800px;
+    gap: 0.6em;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    grid-template-areas:
+        'dp'
+        'hello'
+        'tagline'
+        'intro'
+        'social';
+}
+
+.about .display-pic {
+    grid-area: dp;
+    margin: auto;
+    text-align: center;
+}
+
+.about .display-pic img {
+    width: 70%;
+    max-width: 30em;
+}
+
+.about .hello {
+    font-size: 3em;
+    font-weight: 800;
+    grid-area: hello;
+}
+
+.about .tagline {
+    grid-area: tagline;
+    font-size: 1.5em;
+}
+
+.about .intro {
+    font-size: medium;
+    grid-area: intro;
+    margin-bottom: 1.2em;
+}
+
+.about .social {
+    grid-area: social;
+    display: inline;
+    vertical-align: middle;
+}
+
+.about .social-text {
+    display: none;
+}
+
+.about .social i {
+    font-size: x-large;
+    padding-top: 0.6em;
+}
+
+
+
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+
+    .about {
+        grid-template-areas:
+            'dp hello hello hello hello'
+            'dp tagline tagline tagline tagline'
+            'dp intro intro intro intro'
+            'dp intro intro intro intro'
+            'dp social social social social';
+        text-align: left;
+        min-width: 700px;
+    }
+
+    .about .display-pic {
+        min-width: 10em;
+    }
+
+    .display-pic img {
+        width: 90% !important;
+    }
+
+    .logo {
+        float: left;
+    }
+    
+    .navbar {
+        float: right;
+        clear: unset;
+    }
+    
+    .navbar .nav-link {
+        float: left;
+    }
+
+}
+
+/** For larger screens **/
+@media only screen and (min-width: 900px) {
+    .about .social-text {
+        display: unset;
+    }
+}
