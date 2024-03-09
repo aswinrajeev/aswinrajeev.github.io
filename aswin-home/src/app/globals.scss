@@ -14,11 +14,40 @@
 
 body {
     min-width: 310px;
+    color: #121212;
 }
 
-a {
+
+/** Components **/
+/** ========== **/
+
+a, .clickable {
     text-decoration: none;
-    color:#252525
+    color:#252525;
+    opacity: 0.85;
+}
+
+a:hover, 
+a:active
+.clickable:hover,
+.clickable:active {
+    opacity: 1;
+}
+
+.button {
+    background-color: #e2e4e5;
+    vertical-align: middle;
+    border-radius: 0.3em;
+    padding: 0.6em;
+    padding-top: 0.8em;
+    margin-right: 0.4em;
+    display: inline;
+}
+
+.button:hover, 
+.button:focus {
+    background-color: #252525;
+    color: #e2e4e5;
 }
 
 .header {
@@ -50,7 +79,7 @@ a {
     height: 3em;
 }
 
-.navbar ul {
+.navbar .nav-list {
     margin: auto;
     padding: 0;
 }
@@ -58,6 +87,51 @@ a {
 .display-pic img {
     border-radius: 100%;
 }
+
+.footer {
+    height: 5em;
+    background-color: #252525;
+    color: #fefefe;
+    padding: 1.3em;
+    text-align: center;
+    margin-top: 7em;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        color: #e5e5e5;
+        background-color: #1e1e1e;
+    }
+
+    .logo.adaptive {
+        filter: invert(1);
+    }
+
+    a, .clickable {
+        text-decoration: none;
+        color:#b8b6b6;
+        opacity: 0.85;
+    }
+
+    .button.adaptive {
+        background-color: #2a2a2a;
+    }
+    
+    .button.adaptive:hover, 
+    .button.adaptive:focus {
+        background-color: #222222;
+        color: #b3b2b2;
+    }
+
+    .footer.adaptive {
+        background-color: #151515;
+        color: #fefefe;
+    }
+}
+
+/**  Sections **/
+/** ========= **/
 
 .about {
     display: grid;
@@ -115,34 +189,12 @@ a {
     display: none;
 }
 
-.about .social li {
-    background-color: #e2e4e5;
-    vertical-align: middle;
-    border-radius: 0.3em;
-    padding: 0.6em;
-    padding-top: 0.8em;
-    margin-right: 0.4em;
-    display: inline;
-}
-
-.about .social li:hover, .about .social li:focus {
-    background-color: #252525;
-    color: #e2e4e5;
-}
-
 .about .social i {
     font-size: x-large;
     padding-top: 0.6em;
 }
 
-.footer {
-    height: 5em;
-    background-color: #252525;
-    color: #fefefe;
-    padding: 1.3em;
-    text-align: center;
-    margin-top: 7em;
-}
+
 
 /** For large screens **/
 @media only screen and (min-width: 700px) {
