@@ -1,0 +1,44 @@
+/**  Home-page/header section **/
+/** ========================= **/
+
+.header {
+    max-width: 1000px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 4em;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.logo {
+    width: 10em;
+    float: unset;
+    padding: 7px;
+    position: relative;
+    top: 0.2em;
+    margin: auto;
+}
+
+.navbar {
+    clear: both;
+}
+
+.navbar .nav-link {
+    float: left;
+    padding: 7px;
+    height: 3em;
+}
+
+.navbar .nav-list {
+    margin: auto;
+    padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo.adaptive {
+        filter: invert(1);
+    }
+}

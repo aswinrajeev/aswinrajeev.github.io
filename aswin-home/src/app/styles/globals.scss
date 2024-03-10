@@ -52,51 +52,8 @@ a:active
     color: var(--button-text-color);
 }
 
-.header {
-    max-width: 1000px;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: auto;
-    height: 4em;
-    text-align: center;
-}
-
-.logo {
-    width: 10em;
-    float: unset;
-    padding: 7px;
-    position: relative;
-    top: 0.2em;
-    margin: auto;
-}
-
-.navbar {
-    clear: both;
-}
-
-.navbar .nav-link {
-    float: left;
-    padding: 7px;
-    height: 3em;
-}
-
-.navbar .nav-list {
-    margin: auto;
-    padding: 0;
-}
-
 .display-pic img {
     border-radius: 100%;
-}
-
-.footer {
-    height: 5em;
-    background-color: var(--bg-color-2);
-    color: var(--text-color-2);
-    padding: 1.3em;
-    text-align: center;
-    margin-top: 7em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -105,10 +62,6 @@ a:active
         color: #a8a8a8;
         background-color: #1e1e1e;
         letter-spacing: -0.03em;
-    }
-
-    .logo.adaptive {
-        filter: invert(1);
     }
 
     a, .clickable {
@@ -134,4 +87,6 @@ a:active
 }
 
 // page specific CSS
-@import 'home-page.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'footer.scss';

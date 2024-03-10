@@ -1,0 +1,19 @@
+/**  Home-page/footer section **/
+/** ========================= **/
+
+.footer {
+    height: 5em;
+    background-color: var(--bg-color-2);
+    color: var(--text-color-2);
+    padding: 1.3em;
+    text-align: center;
+    margin-top: 7em;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .footer.adaptive {
+        background-color: #151515;
+        color: #fefefe;
+    }
+}
