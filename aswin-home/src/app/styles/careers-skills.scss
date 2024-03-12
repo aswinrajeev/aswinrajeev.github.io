@@ -1,0 +1,93 @@
+/**  Home-page/career and skills section **/
+/** ==================================== **/
+
+.career-skills-container {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    background-color: var(--bg-color-3);
+    color: var(--text-color-3)
+}
+.career-skills {
+    display: grid;
+    clear: both;
+    height: auto;
+    width: 90%;
+    max-width: 800px;
+    gap: 0.6em;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    align-items: center;
+    grid-template-areas:
+        'career' 
+        'skills';
+}
+
+.cs-section {
+    margin: 0 auto 0 auto;
+    vertical-align: top;
+    align-self: start;
+}
+
+.career-org {
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.org {
+    display: flex;
+    align-items: center;
+}
+
+.org-logo {
+    width: 7em;
+    display: inline-block;
+}
+
+.org-title {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 0.1em
+}
+
+.role {
+    display: block;
+    margin-left: 4em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+    border-left: var(--outline-color) solid;
+}
+
+.role::before {
+    content: '\2022';
+    position: absolute;
+    font-size: 2.5em;
+    transform: translate(-1.5em, -0.5em);
+    color: var(--outline-color);
+}
+
+.role-title {
+    font-size: 1em;
+}
+
+.role-tenure {
+    font-size: 0.9em;
+}
+
+.role-description {
+    grid-area: role-description;
+    font-size: 0.9em;
+}
+
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+
+    .career-skills {
+        grid-template-areas:
+            'career skills';
+    }
+
+}

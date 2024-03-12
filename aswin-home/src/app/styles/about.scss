@@ -9,7 +9,8 @@
     max-width: 800px;
     gap: 0.6em;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 5em;
+    margin-bottom: 3em;
     text-align: center;
     grid-template-areas:
         'dp'
@@ -31,8 +32,6 @@
 }
 
 .about .hello {
-    font-size: 3em;
-    font-weight: 800;
     grid-area: hello;
 }
 
@@ -76,6 +75,10 @@
             'dp social social social social';
         text-align: left;
         min-width: 700px;
+    }
+
+    .about .hello {
+        grid-area: hello;
     }
 
     .about .display-pic {

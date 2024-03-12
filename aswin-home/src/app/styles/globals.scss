@@ -29,6 +29,12 @@ a, .clickable {
     opacity: 0.85;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+
 a:hover, 
 a:active
 .clickable:hover,
@@ -86,7 +92,15 @@ a:active
     }
 }
 
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+    h1 {
+        text-align: left;
+    }
+}
+
 // page specific CSS
 @import 'header.scss';
 @import 'about.scss';
+@import 'careers-skills.scss';
 @import 'footer.scss';
