@@ -1,0 +1,34 @@
+.affiliations-container {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    background-color: var(--bg-color-3);
+    color: var(--text-color-3)
+}
+
+.affiliations {
+    clear: both;
+    height: auto;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.partneships {
+    margin: 1em auto 1em auto;
+    vertical-align: top;
+    align-self: start;
+}
+
+.parter-orgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 2em auto 2em auto;
+}
+
+.partner-logo {
+    width: 200px;
+}
