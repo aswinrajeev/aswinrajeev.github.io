@@ -35,6 +35,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-weight: 700;
+}
+
 a:hover, 
 a:active
 .clickable:hover,
@@ -102,4 +106,5 @@ a:active
 // page specific CSS
 @import 'header.scss';
 @import 'about.scss';
+@import 'affiloiations.scss';
 @import 'footer.scss';
