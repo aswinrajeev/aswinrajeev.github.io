@@ -29,6 +29,12 @@ a, .clickable {
     opacity: 0.85;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+
 a:hover, 
 a:active
 .clickable:hover,
@@ -83,6 +89,13 @@ a:active
     .footer.adaptive {
         background-color: #151515;
         color: #fefefe;
+    }
+}
+
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+    h1 {
+        text-align: left;
     }
 }
 

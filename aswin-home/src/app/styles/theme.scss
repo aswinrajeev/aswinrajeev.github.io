@@ -1,6 +1,7 @@
 
 :root {
     /** Light theme **/
+
     // body
     --bg-color: #e2e4e5;
     --text-color: #121212;
@@ -9,6 +10,13 @@
     // secondary
     --bg-color-2: #252525;
     --text-color-2: #e2e4e5;
+
+    // third
+    --bg-color-3: #424141;
+    --text-color-3: #cecece;
+
+    // decor
+    --outline-color: #bebebe;
 
     // components
     --button-bg-color: #252525;
