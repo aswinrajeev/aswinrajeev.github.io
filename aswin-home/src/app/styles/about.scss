@@ -6,7 +6,8 @@
     clear: both;
     height: auto;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
+    padding: 10px;
     gap: 0.6em;
     margin: auto;
     margin-top: 5em;
@@ -28,7 +29,7 @@
 
 .about .display-pic img {
     width: 70%;
-    max-width: 30em;
+    max-width: 18em;
 }
 
 .about .hello {
@@ -76,7 +77,7 @@
             'dp intro intro intro intro'
             'dp social social social social';
         text-align: left;
-        min-width: 700px;
+        min-width: 685px;
     }
 
     .about .hello {
