@@ -9,10 +9,17 @@
 .affiliations {
     clear: both;
     height: auto;
-    width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 1em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.affiliations a {
+    color: var(--text-color-3);
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .partneships {
@@ -27,6 +34,11 @@
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 2em auto 2em auto;
+}
+
+.partner-info {
+    max-width: 18em;
+    text-align: center;
 }
 
 .partner-logo {
