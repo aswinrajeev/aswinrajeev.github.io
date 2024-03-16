@@ -42,3 +42,10 @@
         filter: invert(1);
     }
 }
+
+// For displays having width less that 325px (like Samsung fold)
+@media only screen and (max-width: 325px) {
+    .navbar .nav-link {
+        padding: 5px;
+    }
+}
