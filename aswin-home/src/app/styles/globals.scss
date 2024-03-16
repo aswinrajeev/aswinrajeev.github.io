@@ -44,6 +44,7 @@ a:active
 .clickable:hover,
 .clickable:active {
     opacity: 1;
+    font-weight: 500;
 }
 
 .button {
@@ -54,6 +55,8 @@ a:active
     padding-top: 0.8em;
     margin-right: 0.4em;
     display: inline;
+    border: none;
+    max-width: 15em;
 }
 
 .button:hover, 
@@ -108,3 +111,4 @@ a:active
 @import 'about.scss';
 @import 'affiliations.scss';
 @import 'footer.scss';
+@import 'about-me.scss';
