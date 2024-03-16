@@ -8,7 +8,7 @@ export default function About() {
                 <h1 className="hello">Hello</h1>
                 <h2 className="tagline">My name is Aswin</h2>
                 <p className="intro">
-                    I&apos;m a software engineer with over 10 years of experience in software engineering and currently work at Amazon. I&apos;m skilled in software development involving a wide range of technologies and programming languages. Passionate about tech, mentoring, and writing on software engineering topics.
+                    I&apos;m a software engineer with over 10 years of experience in software engineering and currently work at Amazon. I&apos;m skilled in software development involving a wide range of technologies and programming languages. Passionate about tech, mentoring, and writing on software engineering topics. (<a href="/about">Read more</a>)
                 </p>
                 <div className="social">
                     <a href="https://blog.aswin.me"><li className="button adaptive"><i className="bi bi-medium"></i><span className="social-text"> Blog at Medium</span></li></a>
