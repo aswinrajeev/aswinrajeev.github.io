@@ -7,7 +7,7 @@ export default function Header() {
                     <a href="/"><li className="nav-link">Home</li></a>
                     <a href="https://blog.aswin.me"><li className="nav-link">Blog</li></a>
                     <a href="#"><li className="nav-link">Works</li></a>
-                    <a href="#"><li className="nav-link">About</li></a>
+                    <a href="/about"><li className="nav-link">About</li></a>
                     <a href="#"><li className="nav-link">Contact</li></a>
                 </ul>
             </nav>
