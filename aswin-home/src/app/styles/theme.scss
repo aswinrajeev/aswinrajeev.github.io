@@ -3,7 +3,7 @@
     /** Light theme **/
 
     // body
-    --bg-color: #e2e4e5;
+    --bg-color: #fefefe;
     --text-color: #121212;
     --text-color-emph: #252525;
     
@@ -19,7 +19,9 @@
     --outline-color: #bebebe;
 
     // components
-    --button-bg-color: #252525;
-    --button-text-color: #e2e4e5;
+    --button-bg-color: #e2e4e5;
+    --button-text-color: #121212;
+    --button-bg-color-focus: #252525;
+    --button-text-color-focus: #e2e4e5;
 
 }

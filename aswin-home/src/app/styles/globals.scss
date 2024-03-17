@@ -16,6 +16,7 @@
 
 body {
     min-width: 310px;
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
@@ -48,8 +49,8 @@ a:active
 }
 
 .button {
-    background-color: var(--bg-color);
-    color:var(--text-color-emph);
+    background-color: var(--button-bg-color);
+    color:var(--button-text-color);
     vertical-align: middle;
     border-radius: 0.3em;
     padding: 0.6em;
@@ -62,8 +63,8 @@ a:active
 
 .button:hover, 
 .button:focus {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
+    background-color: var(--button-bg-color-focus);
+    color: var(--button-text-color-focus);
 }
 
 .display-pic img {
@@ -99,6 +100,11 @@ a:active
         background-color: #151515;
         color: #fefefe;
     }
+
+    img.adaptive {
+        filter: grayscale(100%) invert(100%);
+        mix-blend-mode: difference;
+    }
 }
 
 /** For large screens **/
@@ -112,5 +118,6 @@ a:active
 @import 'header.scss';
 @import 'about.scss';
 @import 'affiliations.scss';
+@import 'skills.scss';
 @import 'footer.scss';
 @import 'about-me.scss';
