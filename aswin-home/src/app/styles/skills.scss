@@ -24,6 +24,9 @@
 
 .skill-icon {
     width: 8em;
-    //flex-grow: 1;
     margin: 1em;
+}
+
+.skill-icon:hover, .skill-icon:active, .skill-icon:focus {
+    transform:scale(1.5);
 }
