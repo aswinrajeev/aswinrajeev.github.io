@@ -44,3 +44,7 @@
 .partner-logo {
     width: 200px;
 }
+
+.partner-logo:hover, .partner-logo:active, .partner-logo:focus {
+    transform:scale(1.2);
+}
