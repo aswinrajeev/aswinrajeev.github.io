@@ -12,7 +12,7 @@ export default function Skills() {
                     <img src="/resources/react.svg" className="skill-icon" style={{"padding": "1.2em"}} alt="ReactJs logo" title="React"/>
                     <img src="/resources/electron.svg" className="skill-icon" alt="Electron framework logo" title="Electron for desktop applications"/>
                     <img src="/resources/aws.svg" className="skill-icon adaptive" alt="AWS logo" title="AWS Cloud"/>
-                    <img src="/resources/postgres.svg" className="skill-icon" alt="Postgres logo" title="Postgres RDBMD"/>
+                    <img src="/resources/postgres.svg" className="skill-icon" alt="Postgres logo" title="Postgres RDBMS"/>
                     <img src="/resources/vscode.png" className="skill-icon" alt="Visual Studio Code logo" title="VSCode IDE"/>
                     <img src="/resources/intellij.png" className="skill-icon" style={{"padding": "1em"}} alt="IntelliJ logo" title="IntelliJ IDE"/>
                     <img src="/resources/github.svg" className="skill-icon adaptive" alt="GitHub logo" title="Git/GitHub"/>
