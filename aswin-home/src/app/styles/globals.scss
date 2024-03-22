@@ -25,9 +25,10 @@ body {
 /** ========== **/
 
 a, .clickable {
-    text-decoration: none;
+    text-decoration: underline;
     color:var(--text-color-emph);
     opacity: 0.85;
+    text-underline-offset: 0.3em;
 }
 
 h1 {
@@ -71,6 +72,24 @@ a:active
     border-radius: 100%;
 }
 
+.page-ribbon {
+    background-color: var(--bg-color-3);
+    color: var(--text-color-3);
+}
+
+.page-ribbon a {
+    color: var(--text-color-3);
+}
+
+.page-ribbon h1 {
+    font-size: large;
+    font-weight: 400;
+    padding: 1em;
+    margin: auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
 @media (prefers-color-scheme: dark) {
 
     body {
@@ -80,7 +99,6 @@ a:active
     }
 
     a, .clickable {
-        text-decoration: none;
         color:#b8b6b6;
         opacity: 0.85;
     }

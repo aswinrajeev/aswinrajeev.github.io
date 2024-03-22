@@ -4,6 +4,9 @@ export default function AboutMe() {
     return (
         <Fragment>
             <section className="about-page-section">
+                <div className="page-ribbon">
+                    <h1><a href="/">Home</a> &gt; About me</h1>
+                </div>
                 <div className="about">
                     <div className="display-pic">
                         <img src="/dp.jpg" alt="Display picture"/>
