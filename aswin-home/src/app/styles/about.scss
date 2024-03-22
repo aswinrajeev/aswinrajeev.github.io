@@ -10,7 +10,7 @@
     padding: 10px;
     gap: 0.6em;
     margin: auto;
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: 3em;
     text-align: center;
     grid-template-areas:
@@ -82,6 +82,7 @@
             'dp social social social social';
         text-align: left;
         min-width: 685px;
+        margin-top: 4em;
     }
 
     .about .hello {
