@@ -25,9 +25,9 @@ body {
 /** ========== **/
 
 a, .clickable {
-    text-decoration: underline;
     color:var(--text-color-emph);
     opacity: 0.85;
+    text-decoration: underline;
     text-underline-offset: 0.3em;
 }
 
@@ -90,6 +90,7 @@ a:active
     text-align: left;
 }
 
+/** Dark theme settings **/
 @media (prefers-color-scheme: dark) {
 
     body {
