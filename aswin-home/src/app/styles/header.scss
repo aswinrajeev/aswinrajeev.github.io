@@ -3,19 +3,21 @@
 
 .header {
     max-width: 1000px;
+    text-align: center;
     position: relative;
     top: 0;
     left: 0;
     margin: auto;
-    height: 4em;
-    text-align: center;
     padding-right: 10px;
     padding-left: 10px;
 }
 
+.logo-link {
+    display: inline-block;
+}
+
 .logo {
     width: 10em;
-    float: unset;
     padding: 7px;
     position: relative;
     top: 0.2em;
@@ -43,8 +45,16 @@
     }
 }
 
+/** For large screens **/
+@media only screen and (min-width: 700px) {
+    .header {
+        text-align: left;
+    }
+}
+
 // For displays having width less that 325px (like Samsung fold)
 @media only screen and (max-width: 325px) {
+
     .navbar .nav-link {
         padding: 5px;
     }

@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header className="header">
-            <a href="/"><img className="logo clickable adaptive" src="/aswinrajeev.webp" alt="Aswin Rajeev logo"/></a>
+            <a className="logo-link" href="/"><img className="logo clickable adaptive" src="/aswinrajeev.webp" alt="Aswin Rajeev logo"/></a>
             <nav className="navbar">
                 <ul className="nav-list">
                     <a href="/"><li className="nav-link">Home</li></a>
