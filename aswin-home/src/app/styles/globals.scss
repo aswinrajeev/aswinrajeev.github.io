@@ -25,9 +25,9 @@ body {
 /** ========== **/
 
 a, .clickable {
-    text-decoration: underline;
     color:var(--text-color-emph);
     opacity: 0.85;
+    text-decoration: underline;
     text-underline-offset: 0.3em;
 }
 
@@ -82,14 +82,15 @@ a:active
 }
 
 .page-ribbon h1 {
-    font-size: large;
+    font-size: 1em;
     font-weight: 400;
-    padding: 1em;
+    padding: 1.2em;
     margin: auto;
     max-width: 1000px;
     text-align: left;
 }
 
+/** Dark theme settings **/
 @media (prefers-color-scheme: dark) {
 
     body {
