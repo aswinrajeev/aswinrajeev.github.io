@@ -27,6 +27,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Fetch blog posts
+              run: |
+                  curl https://aswinrajeev.medium.com/feed -o aswin-home/public/blog-feed.rss
+                  cat aswin-home/public/blog-feed.rss
+
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
