@@ -42,6 +42,11 @@ jobs:
                   cd aswin-home
                   npm install
                   npm run build
+                  
+            - name: Check for hard links
+              run: |
+                cd aswin-home/out
+                find . -type f -links +1
 
             - name: Remove symlinks and problematic files
               run: |
