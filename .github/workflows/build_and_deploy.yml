@@ -43,22 +43,16 @@ jobs:
                   npm install
                   npm run build
 
-            - name: Break hard links with tar
-              run: |
-                  cd aswin-home
-                  tar -czf /tmp/out.tar.gz out/
-                  rm -rf out
-                  tar -xzf /tmp/out.tar.gz
-                  rm /tmp/out.tar.gz
-
             - name: Setup Pages
               uses: actions/configure-pages@v4
+
             - name: Upload artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v3
               with:
                   name: github-pages
                   path: 'aswin-home/out/'
                   retention-days: 1
+
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
